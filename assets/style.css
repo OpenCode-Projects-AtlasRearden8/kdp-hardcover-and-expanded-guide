@@ -1,0 +1,225 @@
+:root {
+  --bg: #f7f6fb;
+  --panel: #ffffff;
+  --ink: #262129;
+  --muted: #6d6678;
+  --accent: #5a4a7a;
+  --accent-soft: #ece7f4;
+  --border: #e1dbe8;
+  --link: #2f5d8a;
+  --good: #2f6b45;
+  --good-soft: #eef7ee;
+  --warn: #a86a32;
+  --warn-soft: #fdf3ea;
+  --code-bg: #f0edf5;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
+  font-size: 1.0625rem;
+  line-height: 1.7;
+}
+
+.layout {
+  display: flex;
+  gap: 2.5rem;
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 4rem;
+}
+
+header.site {
+  background: var(--panel);
+  border-bottom: 1px solid var(--border);
+}
+
+header.site .inner {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 1.1rem 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+header.site .brand {
+  font-weight: 700;
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+header.site .tagline {
+  color: var(--muted);
+  font-size: 0.875rem;
+  font-style: italic;
+}
+
+main {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+nav.sidebar {
+  flex: 0 0 15rem;
+  align-self: flex-start;
+  position: sticky;
+  top: 1rem;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  padding: 1rem 1.1rem;
+}
+
+nav.sidebar h2 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin: 0 0 0.6rem;
+}
+
+nav.sidebar ul { list-style: none; margin: 0 0 1rem; padding: 0; }
+
+nav.sidebar li { margin: 0.28rem 0; }
+
+nav.sidebar a {
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 0.92rem;
+  display: block;
+  border-radius: 0.3rem;
+  padding: 0.15rem 0.4rem;
+}
+
+nav.sidebar a:hover { background: var(--accent-soft); }
+
+nav.sidebar a[aria-current="page"] {
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-weight: 700;
+}
+
+article h1 {
+  font-size: 2rem;
+  line-height: 1.25;
+  margin: 0.5rem 0 1.2rem;
+  color: var(--accent);
+}
+
+article h2 {
+  font-size: 1.35rem;
+  margin: 2rem 0 0.6rem;
+  border-bottom: 2px solid var(--border);
+  padding-bottom: 0.25rem;
+}
+
+article h3 { font-size: 1.12rem; margin: 1.5rem 0 0.4rem; }
+
+article table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.2rem 0;
+  font-size: 0.95rem;
+}
+
+article th, article td {
+  border: 1px solid var(--border);
+  padding: 0.45rem 0.65rem;
+  text-align: left;
+}
+
+article th { background: var(--accent-soft); }
+
+article blockquote {
+  margin: 1.2rem 0;
+  padding: 0.7rem 1rem;
+  border-left: 4px solid var(--accent);
+  background: var(--accent-soft);
+  border-radius: 0 0.4rem 0.4rem 0;
+}
+
+article code {
+  background: var(--code-bg);
+  padding: 0.08em 0.35em;
+  border-radius: 0.25rem;
+  font-size: 0.9em;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+}
+
+article pre {
+  background: var(--code-bg);
+  padding: 0.9rem 1rem;
+  border-radius: 0.4rem;
+  overflow-x: auto;
+}
+
+article pre code { padding: 0; background: none; }
+
+article hr {
+  border: 0;
+  border-top: 1px solid var(--border);
+  margin: 2rem 0;
+}
+
+/* Decision flowchart */
+
+div.flowchart {
+  margin: 1.5rem 0;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+div.flowchart svg { display: block; margin: 0 auto; min-width: 640px; height: auto; }
+
+@media print {
+  div.flowchart { border: none; padding: 0; overflow: visible; }
+  header.site, nav.sidebar, .pager, footer.site { display: none; }
+}
+
+.pager {
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.pager a { color: var(--link); text-decoration: none; font-weight: 600; }
+.pager a:hover { text-decoration: underline; }
+
+footer.site {
+  border-top: 1px solid var(--border);
+  background: var(--panel);
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+footer.site .inner {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 1.1rem 1.25rem;
+}
+
+footer.site a { color: var(--link); }
+
+a { color: var(--link); }
+
+@media (max-width: 56em) {
+  .layout { flex-direction: column; }
+  nav.sidebar { position: static; flex: none; }
+}

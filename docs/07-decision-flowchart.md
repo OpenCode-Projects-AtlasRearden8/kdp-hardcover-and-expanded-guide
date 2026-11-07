@@ -1,0 +1,134 @@
+# 7. The decision flowchart
+
+Everything in this guide, compressed into one flow. Start at the top box and follow the arrows; the paths end in one of four conclusions. Each decision box names the chapter that explains it in depth.
+
+<div class="flowchart" role="img" aria-label="Decision flowchart: choose your KDP hardcover and expanded distribution setup">
+
+<svg viewBox="0 0 760 1060" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, serif" role="presentation">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#5a4a7a"/>
+    </marker>
+    <style>
+      .box { fill: #ffffff; stroke: #5a4a7a; stroke-width: 2; rx: 10; }
+      .q { fill: #f4f0fa; }
+      .out { fill: #eef7ee; stroke: #2f6b45; stroke-width: 2; }
+      .warn { fill: #fdf3ea; stroke: #a86a32; stroke-width: 2; }
+      text { fill: #26221c; }
+      .lbl { fill: #5a4a7a; font-weight: bold; }
+      line, path.pipe { stroke: #5a4a7a; stroke-width: 2; fill: none; marker-end: url(#arrow); }
+    </style>
+  </defs>
+
+  <!-- Start -->
+  <rect x="230" y="20" width="300" height="56" rx="10" class="box"/>
+  <text x="380" y="44" text-anchor="middle" font-size="15">Paperback (and Kindle) are</text>
+  <text x="380" y="63" text-anchor="middle" font-size="15">published and doing OK</text>
+  <path d="M 380 76 L 380 106" class="pipe"/>
+
+  <!-- Q1: hardcover at all -->
+  <rect x="200" y="106" width="360" height="72" rx="10" class="box q"/>
+  <text x="380" y="132" text-anchor="middle" font-size="15">Q1: Who specifically pays $10&#8211;15 more</text>
+  <text x="380" y="151" text-anchor="middle" font-size="15">for a hardcover of THIS book?</text>
+  <text x="380" y="169" text-anchor="middle" font-size="13" font-style="italic">(libraries? gift buyers? signing events? ch. 1)</text>
+  <path d="M 380 178 L 380 208" class="pipe"/>
+  <text x="392" y="197" class="lbl" font-size="13">a concrete answer</text>
+  <path d="M 200 142 L 90 142 L 90 208" class="pipe"/>
+  <text x="98" y="200" class="lbl" font-size="13">"nobody, but it'd be nice"</text>
+
+  <!-- Q noted / wait -->
+  <rect x="40" y="208" width="120" height="64" rx="10" class="out"/>
+  <text x="100" y="232" text-anchor="middle" font-size="13" font-weight="bold">WAIT for</text>
+  <text x="100" y="250" text-anchor="middle" font-size="13" font-weight="bold">reader data</text>
+  <text x="100" y="266" text-anchor="middle" font-size="11">(paperback first)</text>
+
+  <!-- Q2: finish -->
+  <rect x="230" y="208" width="300" height="72" rx="10" class="box q"/>
+  <text x="380" y="234" text-anchor="middle" font-size="15">Q2: Desk/reference use &#8594; laminate</text>
+  <text x="380" y="252" text-anchor="middle" font-size="15">Gift/ceremony use &#8594; jacket</text>
+  <text x="380" y="270" text-anchor="middle" font-size="13" font-style="italic">(thin margin? laminate. ch. 2)</text>
+  <path d="M 380 280 L 380 310" class="pipe"/>
+
+  <!-- Q3: fits the box -->
+  <rect x="210" y="310" width="340" height="72" rx="10" class="box q"/>
+  <text x="380" y="336" text-anchor="middle" font-size="15">Q3: Does your page count + trim fit</text>
+  <text x="380" y="354" text-anchor="middle" font-size="15">KDP's hardcover limits, at a sane price?</text>
+  <text x="380" y="372" text-anchor="middle" font-size="13" font-style="italic">(run the cost calculator; ch. 1)</text>
+  <path d="M 380 382 L 380 412" class="pipe"/>
+  <text x="392" y="401" class="lbl" font-size="13">yes</text>
+  <path d="M 550 346 L 680 346 L 680 240 L 165 240" class="pipe"/>
+  <text x="558" y="338" class="lbl" font-size="13">no / price floor absurd</text>
+
+  <!-- Q4: ED -->
+  <rect x="230" y="412" width="300" height="88" rx="10" class="box q"/>
+  <text x="380" y="438" text-anchor="middle" font-size="15">Q4: Do libraries / indie shops /</text>
+  <text x="380" y="456" text-anchor="middle" font-size="15">wholesale channels actually matter here?</text>
+  <text x="380" y="474" text-anchor="middle" font-size="13" font-style="italic">(check price floor + lower ED rate; ch. 3)</text>
+  <text x="380" y="492" text-anchor="middle" font-size="13" font-style="italic">(can enable later &#8212; no deadline)</text>
+  <path d="M 380 500 L 380 530" class="pipe"/>
+  <text x="392" y="519" class="lbl" font-size="13">yes</text>
+  <path d="M 530 456 L 640 456 L 640 530" class="pipe"/>
+
+  <!-- ED later -->
+  <rect x="580" y="530" width="120" height="60" rx="10" class="warn"/>
+  <text x="640" y="555" text-anchor="middle" font-size="13" font-weight="bold">skip ED</text>
+  <text x="640" y="573" text-anchor="middle" font-size="12">(revisit later,</text>
+  <text x="640" y="588" text-anchor="middle" font-size="12">no harm done)</text>
+
+  <!-- Q5: preorder -->
+  <rect x="200" y="530" width="330" height="88" rx="10" class="box q"/>
+  <text x="380" y="556" text-anchor="middle" font-size="15" font-weight="bold">Tick ED on the formats that qualify,</text>
+  <text x="380" y="574" text-anchor="middle" font-size="15">and move on to launch prep.</text>
+  <text x="380" y="598" text-anchor="middle" font-size="13">Q5: Are the files FULLY finished &#8212;</text>
+  <text x="380" y="614" text-anchor="middle" font-size="13">could you hit the date a year from now?</text>
+  <path d="M 385 618 L 385 648" class="pipe"/>
+
+  <!-- No files -> no preorder -->
+  <rect x="580" y="648" width="150" height="60" rx="10" class="warn"/>
+  <text x="655" y="673" text-anchor="middle" font-size="13" font-weight="bold">NO PREORDER</text>
+  <text x="655" y="691" text-anchor="middle" font-size="12">(calm launch week</text>
+  <text x="655" y="706" text-anchor="middle" font-size="12">instead; ch. 4)</text>
+  <path d="M 530 618 L 655 618 L 655 648" class="pipe"/>
+  <text x="540" y="610" class="lbl" font-size="13">no, not done</text>
+
+  <!-- Q6: price locked -->
+  <rect x="230" y="648" width="300" height="72" rx="10" class="box q"/>
+  <text x="380" y="674" text-anchor="middle" font-size="15">Q6: Price locked in? One real price,</text>
+  <text x="380" y="692" text-anchor="middle" font-size="15">no "boost it later," formats aligned?</text>
+  <text x="380" y="710" text-anchor="middle" font-size="13" font-style="italic">(same date per format; ch. 4)</text>
+  <path d="M 380 720 L 380 750" class="pipe"/>
+
+  <!-- Q7: author copies -->
+  <rect x="210" y="750" width="340" height="88" rx="10" class="box q"/>
+  <text x="380" y="776" text-anchor="middle" font-size="15">Q7: Events, mailouts, or giveaways budgeted?</text>
+  <text x="380" y="794" text-anchor="middle" font-size="15">&#8594; Order ONE test copy at print cost,</text>
+  <text x="380" y="812" text-anchor="middle" font-size="15">then bulk.</text>
+  <text x="380" y="830" text-anchor="middle" font-size="13" font-style="italic">(per-unit + shipping decides the count; ch. 5)</text>
+  <path d="M 380 838 L 380 868" class="pipe"/>
+
+  <!-- Q8: records -->
+  <rect x="230" y="868" width="300" height="72" rx="10" class="box q"/>
+  <text x="380" y="894" text-anchor="middle" font-size="15">Q8: Royalty ledger set up, tax info</text>
+  <text x="380" y="912" text-anchor="middle" font-size="15">consistent, channels recorded?</text>
+  <text x="380" y="930" text-anchor="middle" font-size="13" font-style="italic">(then just wait ~60 days; ch. 6)</text>
+  <path d="M 380 940 L 380 970" class="pipe"/>
+
+  <!-- End -->
+  <rect x="200" y="970" width="360" height="70" rx="10" class="out"/>
+  <text x="380" y="998" text-anchor="middle" font-size="15" font-weight="bold">DONE: hardcover shipped, ED on (or planned),</text>
+  <text x="380" y="1018" text-anchor="middle" font-size="15" font-weight="bold">preorder clean, copies ordered, ledger live.</text>
+  <text x="380" y="1035" text-anchor="middle" font-size="12">Check royalties next cycle and trust the math.</text>
+</svg>
+
+</div>
+
+## The four endings, in one more plain sentence each
+
+- **WAIT for reader data** — the paperback-first path is a real, respectable answer.
+- **SKIP ED** — Amazon-only is a coherent strategy for Amazon-native audiences; nothing decays.
+- **NO PREORDER** — a calm launch week without a date promise beats a slipped date every time.
+- **DONE** — hardcover exists for a concrete buyer, distribution reaches the channels that matter, and the money plumbing is deliberate.
+
+## How to use this page
+
+Print it (or keep one monitor open). When you reach a question you can't answer confidently, follow the small pointer line under the question — it names the chapter that explains it. Work top to bottom once, with your actual book's numbers open in KDP's calculator, and write your answers on paper. Most people finish in one sitting over coffee.
